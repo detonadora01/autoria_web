@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        display: grid;
+        gap: 5px;
+        padding: 5px;
+        height: 128px;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(124, 154, 209);
+      }
+       .item{
+        text-align: center;
+        background-color: rgb(255, 254, 254);
+        font-size: larger;
+      }
+       .um{
+        grid-column-start: 1;
+        grid-column-end: 3;
+     }
+       .dois{ 
+        grid-row: 1 / span 2 ;
+        grid-column: 3;
+     } 
+       .cinco{ 
+        grid-column: 1 / span 3 ;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item um"> item 1 </div>
+        <div class="item dois"> item 2</div>
+        <div class="item tres"> item 3</div>
+        <div class="item quatro"> item 4</div>
+        <div class="item cinco"> item 5</div>
+    </div>
+</body>
+</html>
